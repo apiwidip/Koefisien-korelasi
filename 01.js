@@ -1,8 +1,8 @@
 const independen = [20,30,40,50,60,70];
 const dependen = [4.1,6.2,8.3,10.1,12.4,14.5];
-
+console.log(`===================================================================`)
 console.log(`© 2023 All Night (AWP), all rights reserved. Made with ❤️ for all.`);
-
+console.log(`===================================================================`)
 
 function Xbar(independen){
     var n = 0;
@@ -32,8 +32,6 @@ dep += dependen[dependen.length - 1];
 var XBAR = Xbar/independen.length;
 var YBAR = Ybar/dependen.length;
 
-console.log(`Xbar = ${ind} / ${independen.length}\n\t${Xbar}/${independen.length} = ${XBAR}`);
-console.log(`Ybar = ${dep} / ${dependen.length}\n\t${Ybar}/${dependen.length} = ${YBAR.toFixed(3)}` )
 function Data(independen,dependen){
     var x = "";
     for(i = 0; i < independen.length - 1; i++){
@@ -46,7 +44,11 @@ function Data(independen,dependen){
     } y += dependen[dependen.length -1];
     console.log(`Y = ${y};`);
 }
+console.log(`===================================================================`)
 Data(independen,dependen);
+console.log(`Xbar = ${ind} / ${independen.length}\n\t${Xbar}/${independen.length} = ${XBAR}`);
+console.log(`Ybar = ${dep} / ${dependen.length}\n\t${Ybar}/${dependen.length} = ${YBAR.toFixed(3)}`);
+console.log(`===================================================================`)
 function XXbar(independen,XBAR){
     var n = 0;
     var k = [];
@@ -64,6 +66,7 @@ function XXbar(independen,XBAR){
     return n;
 }
 XXbar(independen,XBAR);
+console.log(`===================================================================`)
 function YYbar(dependen,YBAR){
     var nn = 0;
     var kk = [];
@@ -81,7 +84,7 @@ function YYbar(dependen,YBAR){
     return nn;
 }
 YYbar(dependen,YBAR);
-
+console.log(`===================================================================`)
 function SSxx(independen,XBAR){
     var nx = 0;
     var kx = [];
@@ -98,7 +101,7 @@ function SSxx(independen,XBAR){
     return nx;
 }
 SSxx(independen,XBAR);
-
+console.log(`===================================================================`)
 function SSxy(independen,XBAR,dependen,YBAR){
     var xy = 0;
     var kxy = [];
@@ -115,6 +118,7 @@ function SSxy(independen,XBAR,dependen,YBAR){
     return xy;
 } 
 SSxy(independen,XBAR,dependen,YBAR);
+console.log(`===================================================================`)
 function HasilXY(independen,XBAR,dependen,YBAR){
     var hxy = 0;
     var hxx = 0;
@@ -133,3 +137,4 @@ function HasilXY(independen,XBAR,dependen,YBAR){
     console.log(`Ytop = ${Ytopi.toFixed(3)}`);
 }
 HasilXY(independen,XBAR,dependen,YBAR);
+console.log(`===================================================================`)
