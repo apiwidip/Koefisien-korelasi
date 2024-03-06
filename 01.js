@@ -81,7 +81,7 @@ function Ybar(dependen){
 }
 var nybar = Ybar(dependen);
 var YBAR = (nybar/dependen.length).toFixed(3);
-//=== Y - Ybar ===
+//=== Y - Ybar ===\\
 function YYbar(dependen,YBAR){
     var y = 0;
     var n = [];
@@ -202,19 +202,19 @@ console.log(`\nKesimpulan:`);
 if(r === 0){
     console.log(`Jadi tidak ada hubungan antara ${namaX} dan ${namaY}`);
 } else if(r > 0 && r <= 0.3){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar.`);
 } else if(r < 0 && r <= -0.3){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil.`);
 } else if(r > 0.3 && r <= 0.7){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar.`);
 } else if(r > -0.3 && r <= -0.7){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil.`);
 } else if(r > 0.7 && r < 1){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar.`);
 } else if(r > -0.7 && r < -1) {
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil.`);
 } else if(r === 1){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} juga semakin besar.`);
 } else if(r === -1){
-    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil`);
+    console.log(`Jadi semakin besar nilai ${namaX} maka nilai ${namaY} semakin kecil.`);
 }
